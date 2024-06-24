@@ -493,7 +493,7 @@ height:10vh;width:10vw;font-weight:500;font-size: 30px;padding: 10px; margin-lef
     
   
     z-index:3;
-    width:550px;
+    width:100vw;
 
 }
 
@@ -655,7 +655,7 @@ width:100vw;
 height: 100vh;
 background: #10182F;
 border-radius: 6px;
-position:sticky;
+
 margin-top: 20vh;
 
 }
