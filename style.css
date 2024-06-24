@@ -173,7 +173,7 @@ body{
     z-index: 7;
     color:#353432;
     width:30vw;
-    height:90vh;
+    height:auto;
     position:fixed;
     
     right:0;
@@ -475,7 +475,7 @@ body{
 
   @media screen and (max-width:600px) {
     body{
-      background-color:beige;
+      background-color:white;
   }
     #header{
       
@@ -483,14 +483,16 @@ body{
       
       background:transparent;
       box-shadow: 0 5px 15px rgba(0,0,0,0.06);
-      position:absolute;
+      position:relative;
+      display: flex;
+      
       
       
 
       
       
     
-      z-index: 10;
+      z-index:-1;
       width:550px;
 
   }
@@ -518,15 +520,17 @@ body{
 #hero{
   background-image: url("fas.jpg");
   height:100vh;
-  width: 600px;
+  width: 40vw;
   background-size: cover;
   padding-top: 5vh;
   background-position:right 5% top 10%;
+  position: fixed;
   
 }
 .box{
   height:30vh;
   width:90vw;
+  
   
   
 
@@ -597,6 +601,9 @@ body{
   color: #7489C6;
   text-shadow: 2px 2px 0 black;
 }
+#headline{
+  width:20vw;
+}
 .product{
   padding-bottom: 20px;
   width: 60vw;
@@ -621,6 +628,7 @@ body{
   height:max-content;
   width: auto;
   display:block;
+
   
   
   
@@ -633,6 +641,7 @@ body{
   justify-content:center;
   margin-left: 100px;
   margin-bottom: 20vh;
+  background-color:beige;
 }
 .product-list button{
   width:80px;
@@ -648,6 +657,7 @@ body{
   border-radius: 6px;
   position:sticky;
   margin-top: 20vh;
+  position:fixed;
 }
 .footer .footer-row {
   display:block;
@@ -720,20 +730,20 @@ body{
 }
 
 body.showcart .cart{
-  inset:104px 0 0 auto;
+  inset:30px 20px 0 auto;
 }
 body.showcart .container{
-  transform:translateX(-5vw);
+  transform:translateX(-25vw);
 }
 
 .cart{
   background-color:#E3E6F3;
   box-shadow:5px 5px 20px #1a1a1a;
-  z-index: 7;
+  z-index: 8;
   color:#353432;
   width:80vw;
-  height:90vh;
-  position:fixed;
+  height:auto;
+  
   
   right:0;
   display: grid;
